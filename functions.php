@@ -1,7 +1,42 @@
 <?php
 
-function lbh_load_scripts_and_styles() {
+function nhsx_load_scripts_and_styles() {
     wp_enqueue_style("main", get_stylesheet_directory_uri()."/dist/css/index.css");
     wp_enqueue_script("main", get_stylesheet_directory_uri()."/dist/js/index.js");
 }
-add_action("wp_enqueue_scripts", "lbh_load_scripts_and_styles");
+add_action("wp_enqueue_scripts", "nhsx_load_scripts_and_styles");
+
+
+function nhsx_custom_post_types_init() {
+    register_post_type("case_study", array(
+        "label" => __("Case studies"),
+        "public" => true,
+        "menu_icon" => "dashicons-book",
+        "show_in_nav_menus"     => true
+    ));
+}
+add_action("init", "nhsx_custom_post_types_init");
+
+
+function nhsx_create_custom_taxonomies() { 
+    register_taxonomy('scenarios', 'case_study', array(
+      "hierarchical" => false,
+      'show_ui' => true,
+      'show_admin_column' => true,
+      'query_var' => true,
+      'labels' => array(
+          'name' => "Scenarios"
+      )
+    ));
+
+    register_taxonomy('pathway_step', 'case_study', array(
+        "hierarchical" => false,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'labels' => array(
+            'name' => "Pathway steps"
+        )
+      ));
+  }
+  add_action('init', 'nhsx_create_custom_taxonomies', 0 );
