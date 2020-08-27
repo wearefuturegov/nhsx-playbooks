@@ -1,1 +1,13 @@
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+$brand: #003087;
+
+.nhsuk-header{
+    &--nhsx{
+        background: $brand;
+    }
+
+    &__navigation{
+        background: $brand;
+    }
+}
