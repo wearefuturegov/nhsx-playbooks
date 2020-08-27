@@ -13,6 +13,14 @@ $brand: #003087;
     }
 }
 
+.nhsuk-hero--image-description .nhsuk-hero-content--nhsx{        
+    background: $brand;
+    .nhsuk-hero__arrow:before,
+    .nhsuk-hero__arrow:after{
+        border-color: $brand;
+    }
+}
+
 // big intro text
 .content-area:first-child {
     p:first-child{
@@ -25,4 +33,26 @@ $brand: #003087;
     p:last-child{
         margin-bottom: 24px;
     }
+}
+
+
+.nhsuk-section{
+
+    &--white{
+        background: white;
+    }
+
+    &__content{
+        padding-bottom: 64px;
+        padding-top: 64px;
+
+        &> :last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+.nhsuk-main-wrapper--homepage{
+    padding-bottom: 0px;
 }

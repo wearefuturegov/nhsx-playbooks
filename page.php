@@ -39,21 +39,7 @@
                         Page last reviewed: <?php the_date(); ?>
                     </p>
                 </div>
-
             </div>  
-
-            <div class="nhsuk-grid-column-one-third">
-                <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this section">
-                <h2 class="nhsuk-heading-m">Related pages</h2>
-                <ol class="nhsuk-contents-list__list"> 
-                    <li class="nhsuk-contents-list__item">
-                        <a class="nhsuk-contents-list__link" href="#">X</a>
-                    </li>
-                </ol>
-                </nav>
-            </div>
-
-
         </div>
     </main>
 </div>
