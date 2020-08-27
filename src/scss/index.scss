@@ -2,6 +2,7 @@
 
 $brand: #003087;
 
+// custom site header
 .nhsuk-header{
     &--nhsx{
         background: $brand;
@@ -9,5 +10,19 @@ $brand: #003087;
 
     &__navigation{
         background: $brand;
+    }
+}
+
+// big intro text
+.content-area:first-child {
+    p:first-child{
+        font-size: 1.1875rem;
+        @media screen and (min-width: 641px){
+            font-size: 1.5rem;
+        }
+    }
+
+    p:last-child{
+        margin-bottom: 24px;
     }
 }

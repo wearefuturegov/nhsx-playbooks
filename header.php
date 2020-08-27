@@ -99,7 +99,7 @@
             </p>
             <ul class="nhsuk-header__navigation-list mobile-nav">
                 <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--for-mobile">
-                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="/">
+                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="https://www.nhsx.nhs.uk/">
                         Home
                         <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" aria-hidden="true">
@@ -111,7 +111,7 @@
                 </li>
 
                 <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="/about-us/">
+                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="https://www.nhsx.nhs.uk/about-us/">
                         About us
                         <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" aria-hidden="true">
@@ -125,7 +125,7 @@
 
                 <li class="nhsuk-header__navigation-item">
                     <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx"
-                        href="/key-tools-and-info/">
+                        href="https://www.nhsx.nhs.uk/key-tools-and-info/">
                         Key tools &amp; info
                         <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" aria-hidden="true">
@@ -139,7 +139,7 @@
 
                 <li class="nhsuk-header__navigation-item">
                     <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx"
-                        href="/covid-19-response/">
+                        href="https://www.nhsx.nhs.uk/covid-19-response/">
                         COVID-19 Response
                         <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" aria-hidden="true">
@@ -152,7 +152,7 @@
 
 
                 <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="/news/">
+                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="https://www.nhsx.nhs.uk/news/">
                         News
                         <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" aria-hidden="true">
@@ -165,7 +165,7 @@
 
 
                 <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="/blogs/">
+                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="https://www.nhsx.nhs.uk/blogs/">
                         Blogs
                         <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" aria-hidden="true">
@@ -178,7 +178,7 @@
 
 
                 <li class="nhsuk-header__navigation-item">
-                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="/contact-us/">
+                    <a class="nhsuk-header__navigation-link nhsuk-header__navigation-link--nhsx" href="https://www.nhsx.nhs.uk/contact-us/">
                         Contact us
                         <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24" aria-hidden="true">
