@@ -40,9 +40,6 @@ if(have_posts()): while(have_posts()): the_post(); ?>
                     <a class="nhsuk-breadcrumb__link" href="/">Cardiology</a>
                 </li>
                 <li class="nhsuk-breadcrumb__item">
-                    <a class="nhsuk-breadcrumb__link" href="<?php echo get_term_link($terms[0]) ?>"><?php echo $terms[0]->name; ?></a>
-                </li>
-                <li class="nhsuk-breadcrumb__item">
                     <?php the_title(); ?>
                 </li>
             </ol>
