@@ -8,7 +8,7 @@ $scenarios = get_terms(array(
 
 $case_studies = new WP_Query(array(
     "post_type" => "case_study",
-    "per_page" => 6
+    "posts_per_page" => -1
 ));
 ?>
 
