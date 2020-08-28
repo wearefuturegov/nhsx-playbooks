@@ -43,7 +43,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
                     <?php the_title(); ?>
                 </li>
             </ol>
-            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="<?php echo get_term_link($terms[0]) ?>">Back to <?php echo $terms[0]->name; ?></a></p>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Cardiology</a></p>
         </div>
     </nav>
 
