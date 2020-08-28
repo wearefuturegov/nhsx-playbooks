@@ -36,7 +36,7 @@
 
                 <div class="nhsuk-review-date">
                     <p class="nhsuk-body-s">
-                        Page last reviewed: <?php the_date(); ?>
+                        Page last reviewed: <?php echo get_the_modified_date(); ?>
                     </p>
                 </div>
             </div>  

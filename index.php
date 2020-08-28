@@ -5,6 +5,23 @@ $max_page = $wp_query->max_num_pages;
 $results = $wp_query->found_posts;
 ?>
 
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item">
+                <a class="nhsuk-breadcrumb__link" href="https://nhsx.nhs.uk">Home</a>
+            </li>
+            <li class="nhsuk-breadcrumb__item">
+                <a class="nhsuk-breadcrumb__link" href="/">Cardiology</a>
+            </li>
+            <li class="nhsuk-breadcrumb__item">
+                Posts
+            </li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/">Back to Cardiology</a></p>
+    </div>
+</nav>
+
 <section class="nhsx-section nhsx-section--white">
     <div class="nhsuk-width-container">
         <main class="nhsuk-main-wrapper" id="maincontent">

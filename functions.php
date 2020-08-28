@@ -28,30 +28,33 @@ function nhsx_custom_post_types_init() {
         "show_in_rest" => true,
         "menu_icon" => "dashicons-book",
         "show_in_nav_menus"     => true,
-        "supports" => array("title", "editor", "thumbnail")
+        "supports" => array("title", "editor", "thumbnail"),
+        "taxonomies" => array("scenario", "pathway")
     ));
 }
 add_action("init", "nhsx_custom_post_types_init");
 
 
 function nhsx_create_custom_taxonomies() { 
-    register_taxonomy('scenarios', 'case_study', array(
+    register_taxonomy('scenario', 'case_study', array(
       "hierarchical" => true,
       'show_ui' => true,
       'show_admin_column' => true,
+      'show_in_rest' => true,
       'query_var' => true,
       'labels' => array(
           'name' => "Scenarios"
       )
     ));
 
-    register_taxonomy('pathway_step', 'case_study', array(
+    register_taxonomy('pathway', 'case_study', array(
         "hierarchical" => true,
         'show_ui' => true,
         'show_admin_column' => true,
+        'show_in_rest' => true,
         'query_var' => true,
         'labels' => array(
-            'name' => "Pathway steps"
+            'name' => "Pathways"
         )
       ));
   }

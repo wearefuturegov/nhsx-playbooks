@@ -2,17 +2,17 @@
 
 $brand: #003087;
 
-// custom site header
+// colour site header
 .nhsuk-header{
     &--nhsx{
         background: $brand;
     }
-
     &__navigation{
         background: $brand;
     }
 }
 
+// hero section on homepage
 .nhsuk-hero--image-description .nhsuk-hero-content--nhsx{        
     background: $brand;
     .nhsuk-hero__arrow:before,
@@ -22,26 +22,58 @@ $brand: #003087;
 }
 
 // big intro text
-.content-area:first-child {
-    p:first-child{
+.content-area {
+    & > p:first-child{
         font-size: 1.1875rem;
         @media screen and (min-width: 641px){
             font-size: 1.5rem;
         }
     }
-
-    p:last-child{
+    & > p:last-child{
         margin-bottom: 24px;
     }
+
+    .wp-block-quote{
+        border-left: 12px solid $nhsuk-link-color;
+        padding: 16px;
+        margin-left: 0;
+        margin-bottom: 24px;
+        p:last-child{
+            margin-bottom: 0px;
+        }
+   }
+
+    .wp-block-embed{
+        margin: 0;
+        margin-bottom: 24px;
+
+        &__wrapper{
+            iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            &:after{
+                padding-top: 56.25%;
+                display: block;
+                content: '';
+            }
+        }
+
+        figcaption{
+            margin-top: 5px;
+        }
+    }
+
 }
 
-
+// fix white strips on homepage
 .nhsuk-section{
-
     &--white{
         background: white;
     }
-
     &__content{
         padding-bottom: 64px;
         padding-top: 64px;
@@ -52,7 +84,17 @@ $brand: #003087;
     }
 }
 
-
+// no unsightly padding at bottom of homepage
 .nhsuk-main-wrapper--homepage{
     padding-bottom: 0px;
+}
+
+// blue call to action icons, not green
+// .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle{
+//     fill: $brand;
+// }
+
+// fix image responsiveness
+.nhsuk-promo__img {
+    height: auto;
 }
