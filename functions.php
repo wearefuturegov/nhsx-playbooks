@@ -28,7 +28,7 @@ function nhsx_custom_post_types_init() {
         "show_in_rest" => true,
         "menu_icon" => "dashicons-book",
         "show_in_nav_menus"     => true,
-        "supports" => array("title", "editor", "thumbnail"),
+        "supports" => array("title", "editor", "thumbnail", "author", "revisions", "excerpt"),
         "taxonomies" => array("scenario", "pathway")
     ));
 }
