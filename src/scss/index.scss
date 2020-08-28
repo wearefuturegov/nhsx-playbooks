@@ -103,4 +103,11 @@ $brand: #003087;
 // fix image responsiveness
 .nhsuk-promo__img {
     height: auto;
+
+    @media screen and (min-width: 641px){
+        @supports(object-fit: cover){
+            height: 170px;
+            object-fit: cover;
+        }
+    }
 }
