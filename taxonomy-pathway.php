@@ -39,15 +39,35 @@ $children = get_terms(array(
             <div class="nhsuk-grid-column-two-thirds">
                 <article class="content-area">    
                     <p class="nhsuk-lede-text"><?php echo $term->description ?></p>
-
                     <ol class="step-by-step">
-                        <?php foreach($children as $step): ?>
+                        <?php foreach($children as $step): 
+                        $sublist = new WP_Query(array(
+                            "tax_query" => array(
+                                array(
+                                    "taxonomy" => "pathway",
+                                    "terms" => $step->term_id
+                                )
+                            ),
+                            "post_type" => "case_study",
+                            "posts_per_page" => -1
+                        ));
+                        ?>
                             <li>
-                                <h2><?php echo $step->name ?></h2>
+                                <details>
+                                    <summary>
+                                        <h2><?php echo $step->name ?></h2>
+                                    </summary>
+                                    <ul>
+                                        <?php if($sublist->have_posts()): while($sublist->have_posts()): $sublist->the_post(); ?>
+                                            <li>
+                                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                            </li>
+                                        <?php endwhile; endif; wp_reset_postdata(); ?>
+                                    </ul>
+                                </details>
                             </li>
                         <?php endforeach; ?>
                     </ol>
-
                 </article>
             </div>  
         </div>
