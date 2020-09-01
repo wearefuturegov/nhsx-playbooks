@@ -52,12 +52,12 @@ $children = get_terms(array(
                             "posts_per_page" => -1
                         ));
                         ?>
-                            <li>
+                            <li class="step-by-step__step">
                                 <details>
                                     <summary>
                                         <h2><?php echo $step->name ?></h2>
                                     </summary>
-                                    <ul>
+                                    <ul class="step-by-step__content-list">
                                         <?php if($sublist->have_posts()): while($sublist->have_posts()): $sublist->the_post(); ?>
                                             <li>
                                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

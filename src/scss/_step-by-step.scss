@@ -1,0 +1,125 @@
+.step-by-step{
+    position: relative;
+    list-style: none;
+    padding-left: 0px;
+    counter-reset: stepper;
+
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        height: 3px;
+        width: 25px;
+        background: $color_nhsuk-grey-3;
+    }
+
+
+    &__step{
+        padding-left: 60px;
+        position: relative;
+        margin-bottom: 0px;
+        @media screen and (min-width: 641px){
+            padding-left: 70px;
+        }
+
+        // tunnels
+        &:after{
+            content: "";
+            display: block;
+            width: 3px;
+            background: $color_nhsuk-grey-3;
+            height: 100%;
+            position: absolute;
+            left: 16px;
+            top: 35px;
+            z-index: 1;
+            @media screen and (min-width: 641px){
+                top: 45px;
+            }
+        }
+
+        &:last-of-type:after{
+            bottom: 0px;
+            height: inherit;
+        }
+
+        // stations
+        &:before{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            font-weight: bold;
+            border-radius: 100px;
+            border: 3px solid $color_nhsuk-grey-3;
+            counter-increment: stepper;
+            content: counter(stepper);
+            position: absolute;
+            left: 0;
+            top: 25px;
+            background: $color_nhsuk-grey-5;
+            z-index: 2;
+            @media screen and (min-width: 641px){
+                top: 35px;
+            }
+        }
+    }
+
+
+    details{
+        border-top: 2px solid $nhsuk-border-color;
+        padding: 20px 0px;
+        @media screen and (min-width: 641px){
+            padding: 30px 0px;
+        }
+
+        &[open]{
+            summary:after{
+                content: "Hide"
+            }
+        }
+
+    }
+
+    summary{
+        display: block;
+        cursor: pointer;
+
+        h2{
+            margin-bottom: 5px;
+        }
+
+        &:after{
+            content: "Show";
+            color: $nhsuk-link-color;
+        }
+
+        &:hover{
+            color: $nhsuk-link-color;
+            &:after{
+                text-decoration: underline;
+            }
+        }
+
+        &:focus{
+            outline: 3px solid transparent;
+            color: $nhsuk-text-color;
+            background:  $nhsuk-focus-color;
+            box-shadow: 0 -2px $nhsuk-focus-color, 0 4px $nhsuk-text-color;
+            &:after{
+                color: $nhsuk-text-color;
+            }
+        }
+    }
+
+
+    &__content-list{
+        list-style: none;
+        margin-top: 25px;
+        padding-left: 0px;
+    }
+
+}
