@@ -7,8 +7,10 @@ $brand: #003087;
     &--nhsx{
         background: $brand;
     }
-    &__navigation{
-        background: $brand;
+    @media screen and (min-width: 61.865em){
+        &__navigation{
+            background: $brand;
+        }
     }
 }
 
