@@ -82,11 +82,21 @@
             }
         }
 
+
+
     }
 
     summary{
         display: block;
         cursor: pointer;
+
+        // remove triangle
+        &::-webkit-details-marker{ 
+            display:none; 
+        }
+        &:first-of-type {
+            list-style-type: none;
+        }
 
         h2{
             margin-bottom: 5px;
