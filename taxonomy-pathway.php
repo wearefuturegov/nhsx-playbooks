@@ -5,7 +5,6 @@ $term = get_queried_object();
 $children = get_terms(array(
     "taxonomy" => "pathway",
     "hide_empty" => false,
-    "number" => 6,
     "parent" => $term->term_id
 ));
 
@@ -57,6 +56,7 @@ $children = get_terms(array(
                                     <summary>
                                         <h2><?php echo $step->name ?></h2>
                                     </summary>
+                                    <p><?php echo $step->description ?></p>
                                     <ul class="step-by-step__content-list">
                                         <?php if($sublist->have_posts()): while($sublist->have_posts()): $sublist->the_post(); ?>
                                             <li>

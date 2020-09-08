@@ -1,1 +1,1 @@
-import "nhsuk-frontend/dist/nhsuk.min.js"
+import "nhsuk-frontend/dist/nhsuk.js"
