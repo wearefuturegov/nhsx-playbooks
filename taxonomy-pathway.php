@@ -56,7 +56,7 @@ $children = get_terms(array(
                                     <summary>
                                         <h2><?php echo $step->name ?></h2>
                                     </summary>
-                                    <p><?php echo $step->description ?></p>
+                                    <p class="step-by-step__description"><?php echo $step->description ?></p>
                                     <ul class="step-by-step__content-list">
                                         <?php if($sublist->have_posts()): while($sublist->have_posts()): $sublist->the_post(); ?>
                                             <li>
